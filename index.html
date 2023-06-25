@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nitesh Daga - Frontend Developer Resume</title>
+    <style>
+        /* Reset default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #333;
+            /* Text color */
+            /* background-color: #f5f5f5; */
+        }
+
+        body.dark-theme {
+            /* Dark theme styles */
+            color: #fff;
+            /* Text color */
+            background-color: #222;
+            /* Background color */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            z-index: 999;
+        }
+
+        .toggle-container {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
+
+        .theme-toggle {
+            /* display: none; */
+        }
+
+        .toggle-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .theme-toggle:checked+.toggle-label {
+            background-color: #555;
+        }
+
+        .theme-toggle:checked+.toggle-label:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            transform: translateX(20px);
+        }
+
+        .theme-toggle:checked+.toggle-label:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 22px;
+            width: 16px;
+            height: 16px;
+            background-color: #000;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            transform: translateX(0);
+        }
+
+        .theme-toggle:not(:checked)+.toggle-label:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #000;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            transform: translateX(0);
+        }
+
+        .theme-toggle:not(:checked)+.toggle-label:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 22px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            transform: translateX(-20px);
+        }
+
+        /* Set the cover image */
+        /* Cover image styles */
+        .cover-image {
+            position: relative;
+            width: auto;
+            height: 300px;
+            background-image: url("assets/cover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Overlay styles */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: left;
+        }
+
+        /* Header and contact info overlay styles */
+
+        /* Name and designation styles */
+        .name-designation {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+            color: #fff;
+        }
+
+        /* Contact information styles */
+        .contact-info {
+            margin: 5px;
+            text-align: right;
+        }
+
+        .contact-info p {
+            color: #fff;
+        }
+
+        /* Resume layout styles */
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Bottom bar styles */
+        .bottom-bar {
+            background-color: rgb(50, 144, 215);
+            height: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Section styles */
+        .section {
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: 5px solid rgb(50, 144, 215);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .summary-list {
+            padding-left: 20px;
+            list-style: disc;
+            margin-top: 0px !important;
+        }
+
+        /* Heading styles */
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: rgb(50, 144, 215);
+        }
+
+        /* Work experience styles */
+        .work-experience {
+            margin-bottom: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 5px;
+        }
+
+        .image-placeholder {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            margin-right: 5px;
+        }
+
+        .work-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .work-details span {
+            margin-left: 5px;
+        }
+
+        /* Skills styles */
+        .skills {
+            color: #333;
+        }
+
+        body.dark-theme .skills {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .skills ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .skills li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+            color: inherit;
+            background-color: #f5f5f5;
+        }
+
+        body.dark-theme .skills li {
+            background-color: #222;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            .work-experience {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+
+            body {
+                background-color: #fff;
+            }
+
+            .bottom-bar {
+                display: none;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const body = document.body;
+
+            themeToggle.addEventListener('change', function () {
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                } else {
+                    body.classList.add('dark-theme');
+                }
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <header class="resume-container">
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle" class="theme-toggle" />
+            <label for="theme-toggle" class="toggle-label"></label>
+        </div>
+    </header>
+    <div class="cover-image resume-container">
+        <div class="overlay">
+            <div class="name-designation">
+                <h1>Nitesh Daga</h1>
+            </div>
+            <div class="contact-info">
+                <p>Email: niteshdaga000@gmail.com</p>
+                <p>Phone: +917696489451</p>
+                <p>Location: Mumbai</p>
+            </div>
+        </div>
+    </div>
+    <div class="resume-container">
+        <div class="bottom-bar"></div>
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>
+                Frontend Specialist with over 8 years of hands-on experience developing high-performance Web-based
+                applications using Angular, AngularJS, and other frameworks.
+            </p>
+            <ul class="summary-list">
+                <li>Proficient in designing and developing applications utilizing JavaScript, TypeScript, HTML/HTML5,
+                    CSS, Less, SCSS, Bootstrap, Materialize, and Tailwind CSS.</li>
+                <li>Skilled in WebRTC and other video technologies such as Twilio and Opentok.</li>
+                <li>Skilled in Video Streaming formats HLS & MPEG-DASH, Video Player development for OTT including the
+                    implementation of DRM using Widevine, Fairplay, and Play Ready, in players like VIDEOjs, SHAKA
+                    player, DASH, and Jwplayer.</li>
+                <li>Proficient in utilizing Build tools such as Gulp, Grunt, Webpack, Docker, CI/CD tools like Jenkins,
+                    Web Servers like Nginx, and Code Analysis tools like Sonarqube.</li>
+                <li>Experience in CDN Management, Distribution, Caching & Policy Methodology, DNS management, Content
+                    Management Systems, Log Processing & Analytics Kibana, Infrastructure Planning, and Scaled
+                    Deployment.</li>
+                <li>Extensive experience in creating, publishing, and managing custom packages on npm, Github, and
+                    Verdaccio.</li>
+                <li>Proven track record in developing, maintaining, and publishing decentralized, templatized
+                    Progressive Web Apps. Proficient in distributing these apps on various Edges as Debian packages,
+                    ensuring offline functionality and compatibility with isolated networks.</li>
+                <li>Well-versed in working with various AWS services, including S3, Lambda, DynamoDB, CloudFront, and
+                    Elastic Beanstalk, enabling robust and scalable web applications.</li>
+                <li>Familiar with backend technologies like C#, Node, Django, and databases like MongoDB and MySQL.</li>
+                <li>Experienced in utilizing project management tools like JIRA and Trello for effective coordination
+                    and streamlined project workflows.</li>
+                <li>Possess a strong understanding of accessibility, performance optimization, web analytics, and SEO
+                    techniques.</li>
+                <li>Proactively stay updated with the latest web trends, enabling informed technology decisions and
+                    staying ahead of industry developments.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>Angular</li>
+                    <li>HTML5</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>SCSS</li>
+                    <li>Bootstrap</li>
+                    <li>Material</li>
+                    <li>Tailwind CSS</li>
+                    <li>Node</li>
+                    <li>C#</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="work-experience">
+                <div class="work-item">
+                    <div class="work-details">
+                        <div class="image-placeholder" style="background-image: url('assets/sb.jpeg');"></div>
+                        <h4>Sugarbox</h4>
+                        <span class="designation">Lead Engineer</span>
+                        <span class="duration">December 2020 - Present</span>
+                    </div>
+
+                    <ul class="summary-list">
+                        <li>Leading development of Sugarbox's Templatized, Decentralized Progressive Web App
+                            (sugarboxapp.com/airflix.co.in)</li>
+                        <li>Reporting & Analytics Integration like WebEngage, In-house data stream, Gtm, Facebook pixel,
+                            etc. Robust error handling and reporting. Drm Playback Implementation using Widevine and
+                            Fairplay, Payments Integrations, Partner Integrations, Themes, etc.</li>
+                        <li>Also involved in setting up a pipeline for its distribution and deployment to various
+                            decentralized edge nodes leveraging DPKG, deb packages, nginx virtual hosts, dnsmasq etc.
+                        </li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <div class="work-details">
+                        <div class="image-placeholder" style="background-image: url('assets/tc.jpeg');"></div>
+                        <h4>Talocity</h4>
+                        <span class="designation">Frontend Developer</span>
+                        <span class="duration">January 2020 - June 2020</span>
+                    </div>
+                    <ul class="summary-list">
+                        <li>Developed touchless hiring solutions using video interviews and assessments.</li>
+                        <li>Collaborated with cross-functional teams to ensure seamless integration of the product.</li>
+                        <li>Implemented cognitive personality reports to enhance the hiring process.</li>
+                        <li>Was also involved in Development and Coding, Technical Strategy, Project Planning and
+                            Execution, Architecture and Design, Code Reviews and Quality Assurance, Collaboration and
+                            Communication, Performance Optimization, Team Development, Documentation, Troubleshooting
+                            and Bug Fixing, and Continuous Improvement</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <div class="work-details">
+                        <div class="image-placeholder" style="background-image: url('assets/ab.jpeg');"></div>
+                        <h4>ALTBalaji</h4>
+                        <span class="designation">Frontend Developer</span>
+                        <span class="duration">June 2018 - December 2019</span>
+                    </div>
+                    <ul class="summary-list">
+                        <li>Contributed to the development of a subscription-based video-on-demand (SVOD) service.</li>
+                        <li>Ensured compatibility across multiple interfaces, including desktops, laptops, tablets, and
+                            smartphones.</li>
+                        <li>Implemented responsive designs and optimized the user experience.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <div class="work-details">
+                        <div class="image-placeholder" style="background-image: url('assets/ca.jpeg');"> </div>
+                        <h4>CheckApp</h4>
+                        <span class="designation">Frontend Developer</span>
+                        <span class="duration">January 2016 - May 2018</span>
+                    </div>
+                    <ul class="summary-list">
+                        <li>Developed a cloud-based, cross-platform Healthcare ICT (Information, Communication &
+                            Technology) application.</li>
+                        <li>Implemented various features and functionalities based on client requirements.</li>
+                        <li>Worked on UI/UX improvements for enhanced user experience.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <div class="work-details">
+                        <div class="image-placeholder" style="background-image: url('assets/ml.jpeg');"></div>
+                        <h4>Mahindra Logistics</h4>
+                        <span class="designation">Frontend Developer</span>
+                        <span class="duration">August 2014 - December 2015</span>
+                    </div>
+                    <ul class="summary-list">
+                        <li>Contributed to the development of logistics solutions as a third-party logistics (3PL)
+                            provider.</li>
+                        <li>Implemented frontend functionalities and integration with backend systems.</li>
+                        <li>Worked on optimizing performance and user experience.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <div class="work-details">
+                        <div class="image-placeholder" style="background-image: url('assets/cts.jpeg');"></div>
+                        <h4>Cognizant</h4>
+                        <span class="designation">Frontend Developer</span>
+                        <span class="duration">July 2013 - July 2014</span>
+                    </div>
+                    <ul class="summary-list">
+                        <li>Started career as a campus hire from Lovely Professional University.</li>
+                        <li>Worked on frontend development projects for clients.</li>
+                        <li>Collaborated with team members to deliver high-quality solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Educational Qualification</h2>
+            <ul class="summary-list">
+                <li>B.Tech. (Computer Science) from Lovely Professional University in 2015 with 8.4 CGPA (75 %)</li>
+                <li>HSC from MBSS school, Bikaner in 2010 with 84%</li>
+                <li>SSC from RSV school, Bikaner in 2008 with 91%</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
