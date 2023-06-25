@@ -1,0 +1,33 @@
+{
+  "name": "npm_resume_nitesh",
+  "version": "1.0.9",
+  "description": "Resume Created using console.log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "npm_resume_nitesh": "./index.js"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitesh-daga/nitesh-daga.github.io.git"
+  },
+  "keywords": [
+    "resume",
+    "nitesh",
+    "nitesh_daga",
+    "nitesh-daga",
+    "nitesh",
+    "daga"
+  ],
+  "author": "nitesh daga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitesh-daga/nitesh-daga.github.io/issues"
+  },
+  "homepage": "https://github.com/nitesh-daga/nitesh-daga.github.io#readme",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}

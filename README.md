@@ -16,6 +16,17 @@ To have a closer look at my resume, please visit the live version [here](https:/
 
 Fun Fact: The resume also supports dark mode. Feel free to toggle the dark mode switch to see the alternative color scheme. 🌙
 
+To view my resume in terminal, simply run the following command in your terminal:
+
+```
+npx npm_resume_nitesh
+```
+
+This will fetch and execute my resume code, displaying it in the console.
+
+Make sure you have Node.js installed on your machine before running the command. If you don't have Node.js, you can download it from [here](https://nodejs.org).
+
+
 ## Feedback and Contributions 🙌
 
 I welcome any feedback, suggestions, or contributions you may have regarding my resume or its implementation using HTML and CSS. Please feel free to reach out to me with your thoughts.
