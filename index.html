@@ -32,6 +32,12 @@
             z-index: 999;
         }
 
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
         .toggle-container {
             position: relative;
             display: inline-block;
@@ -252,6 +258,22 @@
             background-color: #222;
         }
 
+        footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f5f5;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 12px;
+            color: #888;
+        }
+
+
         /* Responsive styles */
         @media screen and (max-width: 600px) {
             .work-experience {
@@ -303,7 +325,7 @@
     <div class="cover-image resume-container">
         <div class="overlay">
             <div class="name-designation">
-                <h1>Nitesh Daga</h1>
+                <h1><a href="https://www.linkedin.com/in/daganitesh" target="_blank">Nitesh Daga</a></h1>
             </div>
             <div class="contact-info">
                 <p>Email: niteshdaga000@gmail.com</p>
@@ -375,14 +397,17 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/sb.jpeg');"></div>
-                        <h4>Sugarbox</h4>
+                        <h4> <a
+                            href="https://sugarboxnetworks.com/" target="_blank">Sugarbox </a></h4>
                         <span class="designation">Lead Engineer</span>
                         <span class="duration">December 2020 - Present</span>
                     </div>
 
                     <ul class="summary-list">
                         <li>Leading development of Sugarbox's Templatized, Decentralized Progressive Web App
-                            (sugarboxapp.com/airflix.co.in)</li>
+                            (<a
+                            href="https://sugarboxapp.com" target="_blank">sugarboxapp.com</a>/<a
+                            href="https://airflix.airasia.co.in/" target="_blank">airflix.co.in</a>)</li>
                         <li>Reporting & Analytics Integration like WebEngage, In-house data stream, Gtm, Facebook pixel,
                             etc. Robust error handling and reporting. Drm Playback Implementation using Widevine and
                             Fairplay, Payments Integrations, Partner Integrations, Themes, etc.</li>
@@ -394,7 +419,8 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/tc.jpeg');"></div>
-                        <h4>Talocity</h4>
+                        <h4><a
+                            href="https://talocity.ai/" target="_blank">Talocity</a></h4>
                         <span class="designation">Sr. Frontend Developer</span>
                         <span class="duration">November 2019 - December 2020</span>
                     </div>
@@ -411,7 +437,8 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/ab.jpeg');"></div>
-                        <h4>ALTBalaji</h4>
+                        <h4><a
+                            href="https://www.altbalaji.com/" target="_blank">ALTBalaji</a></h4>
                         <span class="designation">Sr. Web Developerr</span>
                         <span class="duration">September 2018 - November 2019</span>
                     </div>
@@ -425,7 +452,8 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/ca.jpeg');"> </div>
-                        <h4>CheckApp</h4>
+                        <h4><a
+                            href="" target="_blank">CheckApp</a></h4>
                         <span class="designation">Web Developer</span>
                         <span class="duration">June 2017 - September 2018</span>
                     </div>
@@ -439,7 +467,8 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/ml.jpeg');"></div>
-                        <h4>Mahindra Logistics</h4>
+                        <h4><a
+                            href="https://mahindralogistics.com/" target="_blank">Mahindra Logistics</a></h4>
                         <span class="designation">Sr. Executive IT</span>
                         <span class="duration">September 2016 - June 2017</span>
                     </div>
@@ -453,7 +482,8 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/cts.jpeg');"></div>
-                        <h4>Cognizant</h4>
+                        <h4><a
+                            href="https://www.cognizant.com/in/en" target="_blank">Cognizant</a></h4>
                         <span class="designation">Programmer Analyst</span>
                         <span class="duration">June 2015 - September 2016</span>
                     </div>
@@ -469,12 +499,18 @@
         <div class="section">
             <h2>Educational Qualification</h2>
             <ul class="summary-list">
-                <li>B.Tech. (Computer Science) from Lovely Professional University in 2015 with 8.4 CGPA (75 %)</li>
+                <li>B.Tech. (Computer Science) from <a
+                    href="https://www.lpu.in/" target="_blank">Lovely Professional University</a> in 2015 with 8.4 CGPA (75 %)</li>
                 <li>HSC from MBSS school, Bikaner in 2010 with 84%</li>
                 <li>SSC from RSV school, Bikaner in 2008 with 91%</li>
             </ul>
         </div>
     </div>
+    <footer>
+        <p>Created using HTML, CSS and javascript | View the <a
+                href="https://github.com/nitesh-daga/nitesh-daga.github.io" target="_blank">GitHub repository</a></p>
+    </footer>
+
 </body>
 
 </html>
