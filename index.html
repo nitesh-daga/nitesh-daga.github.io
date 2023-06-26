@@ -39,14 +39,40 @@
         }
 
         .toggle-container {
-            position: relative;
+            position: fixed;
+            top: 20px;
+            right: 20px;
             display: inline-block;
             width: 40px;
             height: 20px;
         }
 
-        .theme-toggle {
-            /* display: none; */
+        .toggle-container::after {
+            content: "Switch to Dark Theme";
+            position: absolute;
+            top: 0px;
+            left: -10px;
+            transform: translateX(-100%);
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            white-space: nowrap;
+        }
+
+        body.dark-theme .toggle-container::after {
+            content: "Switch to Light Theme";
+            background-color: #fff;
+            color: #333;
+        }
+
+        .toggle-container:hover::after {
+            opacity: 1;
+            visibility: visible;
         }
 
         .toggle-label {
@@ -62,7 +88,7 @@
         }
 
         .theme-toggle:checked+.toggle-label {
-            background-color: #555;
+            background-color: #fff;
         }
 
         .theme-toggle:checked+.toggle-label:before {
@@ -167,10 +193,66 @@
 
         /* Resume layout styles */
         .resume-container {
+            position: relative;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
+
+
+        .download-button {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: #ccc;
+            border-radius: 50%;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-button img {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+
+        .download-button::after {
+            content: "Download Resume";
+            position: absolute;
+            bottom: 20%;
+            left: -10px;
+            transform: translateX(-100%);
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            white-space: nowrap;
+        }
+
+        body.dark-theme .download-button::after {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .download-button:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        body.dark-theme .download-button {
+            background-color: #fff
+        }
+
 
         /* Bottom bar styles */
         .bottom-bar {
@@ -316,7 +398,7 @@
 </head>
 
 <body>
-    <header class="resume-container">
+    <header>
         <div class="toggle-container">
             <input type="checkbox" id="theme-toggle" class="theme-toggle" />
             <label for="theme-toggle" class="toggle-label"></label>
@@ -397,17 +479,15 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/sb.jpeg');"></div>
-                        <h4> <a
-                            href="https://sugarboxnetworks.com/" target="_blank">Sugarbox </a></h4>
+                        <h4> <a href="https://sugarboxnetworks.com/" target="_blank">Sugarbox </a></h4>
                         <span class="designation">Lead Engineer</span>
                         <span class="duration">December 2020 - Present</span>
                     </div>
 
                     <ul class="summary-list">
                         <li>Leading development of Sugarbox's Templatized, Decentralized Progressive Web App
-                            (<a
-                            href="https://sugarboxapp.com" target="_blank">sugarboxapp.com</a>/<a
-                            href="https://airflix.airasia.co.in/" target="_blank">airflix.co.in</a>)</li>
+                            (<a href="https://sugarboxapp.com" target="_blank">sugarboxapp.com</a>/<a
+                                href="https://airflix.airasia.co.in/" target="_blank">airflix.co.in</a>)</li>
                         <li>Reporting & Analytics Integration like WebEngage, In-house data stream, Gtm, Facebook pixel,
                             etc. Robust error handling and reporting. Drm Playback Implementation using Widevine and
                             Fairplay, Payments Integrations, Partner Integrations, Themes, etc.</li>
@@ -419,8 +499,7 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/tc.jpeg');"></div>
-                        <h4><a
-                            href="https://talocity.ai/" target="_blank">Talocity</a></h4>
+                        <h4><a href="https://talocity.ai/" target="_blank">Talocity</a></h4>
                         <span class="designation">Sr. Frontend Developer</span>
                         <span class="duration">November 2019 - December 2020</span>
                     </div>
@@ -437,8 +516,7 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/ab.jpeg');"></div>
-                        <h4><a
-                            href="https://www.altbalaji.com/" target="_blank">ALTBalaji</a></h4>
+                        <h4><a href="https://www.altbalaji.com/" target="_blank">ALTBalaji</a></h4>
                         <span class="designation">Sr. Web Developerr</span>
                         <span class="duration">September 2018 - November 2019</span>
                     </div>
@@ -452,8 +530,7 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/ca.jpeg');"> </div>
-                        <h4><a
-                            href="" target="_blank">CheckApp</a></h4>
+                        <h4><a href="" target="_blank">CheckApp</a></h4>
                         <span class="designation">Web Developer</span>
                         <span class="duration">June 2017 - September 2018</span>
                     </div>
@@ -467,8 +544,7 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/ml.jpeg');"></div>
-                        <h4><a
-                            href="https://mahindralogistics.com/" target="_blank">Mahindra Logistics</a></h4>
+                        <h4><a href="https://mahindralogistics.com/" target="_blank">Mahindra Logistics</a></h4>
                         <span class="designation">Sr. Executive IT</span>
                         <span class="duration">September 2016 - June 2017</span>
                     </div>
@@ -482,8 +558,7 @@
                 <div class="work-item">
                     <div class="work-details">
                         <div class="image-placeholder" style="background-image: url('assets/cts.jpeg');"></div>
-                        <h4><a
-                            href="https://www.cognizant.com/in/en" target="_blank">Cognizant</a></h4>
+                        <h4><a href="https://www.cognizant.com/in/en" target="_blank">Cognizant</a></h4>
                         <span class="designation">Programmer Analyst</span>
                         <span class="duration">June 2015 - September 2016</span>
                     </div>
@@ -499,12 +574,17 @@
         <div class="section">
             <h2>Educational Qualification</h2>
             <ul class="summary-list">
-                <li>B.Tech. (Computer Science) from <a
-                    href="https://www.lpu.in/" target="_blank">Lovely Professional University</a> in 2015 with 8.4 CGPA (75 %)</li>
+                <li>B.Tech. (Computer Science) from <a href="https://www.lpu.in/" target="_blank">Lovely Professional
+                        University</a> in 2015 with 8.4 CGPA (75 %)</li>
                 <li>HSC from MBSS school, Bikaner in 2010 with 84%</li>
                 <li>SSC from RSV school, Bikaner in 2008 with 91%</li>
             </ul>
         </div>
+        <!-- Download button -->
+        <a href="assets/nitesh_daga_html_resume.pdf" download class="download-button">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACF0lEQVR4nO2cTU4CQRCF317coy5M8Di48QDewp8D4LXQROQaJnoDwQVuaDNJTTIhMDRUVzNd876kFh0yVV0vU48MpAcghBBCCNlGkCBHQgGVUEAlFFAJBVRCAZVQQCUuBbwFMAXw22gwNg5Fe11sLKWnMYx5OWJzoQABmzGB4Z1XFVgBeABwAT8jXPXyKL0FqzvxVZJX4nn1wCepV41zcpaSfAi/Ag6l3sLLN2LwVNNVM10TcA5gdsA6Rc02NPs5iYAzAO8HrFPUbEOzH46wEgrowQO73kznPTAVVs3QAw2hByqhB0ZAD1RCDzSEHqiEHhgBPVAJPdAQemBfPPAewEhRs2YkuXrlgXcA1gC+9oi4r5mR5FhLzt544BmAN8n3DeDmiJrXAD7l8w8A54n2VoSAsSLuqmklXlvNTv4eOJDrwo5x3lazHtsg11Y50DcPjBVxs2YK8Vx4YOw4N2tajm3xAu4Ssa6ZS7ziPHDfONc1U4ytWw9sE7EZqcRz6YFt45xjbN0J2BQxp3jFe+Amg4Rj2xsPzIF7DzwlFFCJKw+0gh6ohB5oCD1QCT0wAnqgEnqgIfRADx44L2wd22e2Z+FZYevYPlXwWVgJBVSyEBFzHLQ+FVfS449F8qkkr052e+XZ8sD1WJKv5GT3JfxwKeL9SY9mL5+YbPm3LDgLs5dO1IzlFl92oNlUke21J4QQQgghhBACNf9fFHIRr8SLlQAAAABJRU5ErkJggg==">
+        </a>
     </div>
     <footer>
         <p>Created using HTML, CSS and javascript | View the <a
