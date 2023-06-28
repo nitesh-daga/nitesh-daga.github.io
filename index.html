@@ -463,8 +463,10 @@
                 if (theme === 'dark') {
                     body.classList.add('dark-theme');
                     setThemeQueryParam('dark');
+                    updateDownloadButtonHref('dark');
                 } else {
                     setThemeQueryParam('light');
+                    updateDownloadButtonHref('light');
                 }
             }
 
@@ -480,6 +482,11 @@
             // Call the function on page load
             checkDarkThemeQueryParam();
 
+            function updateDownloadButtonHref(theme) {
+                const downloadButton = document.querySelector('.download-button');
+                const file = theme === 'dark' ? 'assets/nitesh_daga_github_io_theme_dark.pdf' : 'assets/nitesh_daga_html_resume.pdf';
+                downloadButton.setAttribute('href', `${file}`);
+            }
 
         });
 
