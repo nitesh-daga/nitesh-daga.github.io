@@ -16,6 +16,8 @@ To have a closer look at my resume, please visit the live version [here](https:/
 
 Fun Fact: The resume also supports dark mode. Feel free to toggle the dark mode switch to see the alternative color scheme. 🌙
 
+Do check the Lighthouse report [here](https://pagespeed.web.dev/analysis/https-nitesh-daga-github-io/stqunvzhd5?form_factor=desktop) for the site.
+
 To view my resume in terminal, simply run the following command in your terminal:
 
 ```
@@ -26,8 +28,13 @@ This will fetch and execute my resume code, displaying it in the console.
 
 Make sure you have Node.js installed on your machine before running the command. If you don't have Node.js, you can download it from [here](https://nodejs.org).
 
+## Credits 🙌
+Icons downloaded from  [iconscout](https://iconscout.com/icons/)
 
-## Feedback and Contributions 🙌
+
+Html to Pdf converted from  [sejda](https://www.sejda.com/html-to-pdf)
+
+## Feedback 💡
 
 I welcome any feedback, suggestions, or contributions you may have regarding my resume or its implementation using HTML and CSS. Please feel free to reach out to me with your thoughts.
 

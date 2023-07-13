@@ -312,12 +312,7 @@
             background-color: #fff
         }
 
-        body.dark-theme .bottom-bar {
-            background-color: rgb(129, 180, 233);
-        }
-        body.dark-theme .section { 
-            border-bottom: 5px solid rgb(129, 180, 233);
-        }
+
         /* Bottom bar styles */
         .bottom-bar {
             background-color: rgb(24, 88, 139);
@@ -341,52 +336,6 @@
             list-style: disc;
             margin-top: 0px !important;
         }
-        body.dark-theme .icon-list{
-            background: #ccc;
-        }
-
-        .icon-list {
-            list-style-type: none;
-            background: #f5f5f5;
-            margin-top: 0px !important;
-            padding: 2px;
-            margin-left: 20px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center
-        }
-        .icon-list li {
-            margin-right: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        body.dark-theme .icon-list li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ccc;
-            border-radius: 2px;
-            padding: 1px;
-        }
-        .icon-list li img{
-            width: 25px;
-            height: 25px;
-        }
-        .icon-list li:hover img {
-            transform-origin: bottom;
-            animation: scale 300ms ease-in-out both;
-        }
-        @keyframes scale {
-        to {
-            transform-origin: bottom;
-            background-color: #ccc;
-            border-radius: 5px;
-            padding: 2px;
-            transform: scale(1.8);
-        }
-        }
 
         /* Heading styles */
         h1,
@@ -395,14 +344,6 @@
         h4 {
             color: rgb(24, 88, 139);
         }
-
-        body.dark-theme h1,
-        body.dark-theme h2,
-        body.dark-theme h3,
-        body.dark-theme h4 {
-            color: rgb(129, 180, 233);
-        }
-        
 
         /* Work experience styles */
         .work-experience {
@@ -560,7 +501,7 @@
 
             function updateDownloadButtonHref(theme) {
                 const downloadButton = document.querySelector('.download-button');
-                const file = theme === 'dark' ? 'assets/nitesh_daga_resume_darkmode.pdf' : 'assets/nitesh_daga_resume_lightmode.pdf';
+                const file = theme === 'dark' ? 'assets/nitesh_daga_github_io_theme_dark.pdf' : 'assets/nitesh_daga_html_resume.pdf';
                 downloadButton.setAttribute('href', `${file}`);
             }
             
@@ -593,7 +534,7 @@
             </div>
             <img src="assets/cover.webp" alt="Cover Image" class="cover-image">
             <div class="dark-mode-link">
-                <a href="assets/nitesh_daga_resume_darkmode.pdf" aria-label="dark-mode-link" download>See in Dark Mode</a>
+                <a href="assets/nitesh_daga_github_io_theme_dark.pdf" aria-label="dark-mode-link" download>See in Dark Mode</a>
             </div>
         </div>
     </div>
@@ -677,20 +618,6 @@
                             decentralized edge nodes leveraging DPKG, deb packages, nginx virtual hosts, dnsmasq etc.
                         </li>
                     </ul>
-                    <ul class="icon-list">
-                        <li> <img width="16" height="16" src="assets/icons/angularjs.webp" alt="angularjs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/tailwind-css.webp" alt="tailwind-css"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/bootstrap.webp" alt="bootstrap"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/nodejs.webp" alt="nodejs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/mongodb.webp" alt="mongodb"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/mysql.webp" alt="mysql"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/firebase.webp" alt="firebase"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/nginx.webp" alt="nginx"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/docker.webp" alt="docker"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/gitlab.webp" alt="gitlab"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/jenkins.webp" alt="jenkins"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/amazon-aws.webp" alt="amazon-aws"> </li>
-                    </ul>
                 </div>
                 <div class="work-item">
                     <div class="work-details">
@@ -708,20 +635,6 @@
                             Communication, Performance Optimization, Team Development, Documentation, Troubleshooting
                             and Bug Fixing, and Continuous Improvement</li>
                     </ul>
-                    <ul class="icon-list">
-                        <li> <img width="16" height="16" src="assets/icons/angularjs.webp" alt="angularjs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/typescript.webp" alt="typescript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/javascript.webp" alt="javascript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/css3.webp" alt="css3"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/bootstrap.webp" alt="bootstrap"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/django.webp" alt="django"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/nginx.webp" alt="nginx"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/npm.webp" alt="npm"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/github.webp" alt="github"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/jenkins.webp" alt="jenkins"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/amazon-aws.webp" alt="amazon-aws"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/visualstudio.webp" alt="visualstudio"> </li>
-                    </ul>
                 </div>
                 <div class="work-item">
                     <div class="work-details">
@@ -735,20 +648,6 @@
                         <li>Ensured compatibility across multiple interfaces, including desktops, laptops, tablets, and
                             smartphones.</li>
                         <li>Implemented responsive designs and optimized the user experience.</li>
-                    </ul>
-                    <ul class="icon-list">
-                        <li> <img width="16" height="16" src="assets/icons/angularjs.webp" alt="angularjs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/html5.webp" alt="html5"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/typescript.webp" alt="typescript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/javascript.webp" alt="javascript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/css3.webp" alt="css3"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/bootstrap.webp" alt="bootstrap"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/nodejs.webp" alt="nodejs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/npm.webp" alt="npm"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/grunt.webp" alt="grunt"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/jenkins.webp" alt="jenkins"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/amazon-aws.webp" alt="amazon-aws"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/visualstudio.webp" alt="visualstudio"> </li>
                     </ul>
                 </div>
                 <div class="work-item">
@@ -764,20 +663,6 @@
                         <li>Implemented various features and functionalities based on client requirements.</li>
                         <li>Worked on UI/UX improvements for enhanced user experience.</li>
                     </ul>
-                    <ul class="icon-list">
-                        <li> <img width="16" height="16" src="assets/icons/angularjs.webp" alt="angularjs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/html5.webp" alt="html5"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/typescript.webp" alt="typescript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/javascript.webp" alt="javascript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/css3.webp" alt="css3"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/bootstrap.webp" alt="bootstrap"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/npm.webp" alt="npm"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/git.webp" alt="git"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/grunt.webp" alt="grunt"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/jenkins.webp" alt="jenkins"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/amazon-aws.webp" alt="amazon-aws"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/visualstudio.webp" alt="visualstudio"> </li>
-                    </ul>
                 </div>
                 <div class="work-item">
                     <div class="work-details">
@@ -792,20 +677,6 @@
                         <li>Implemented frontend functionalities and integration with backend systems.</li>
                         <li>Worked on optimizing performance and user experience.</li>
                     </ul>
-                    <ul class="icon-list">
-                        <li> <img width="16" height="16" src="assets/icons/angularjs.webp" alt="angularjs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/html5.webp" alt="html5"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/typescript.webp" alt="typescript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/javascript.webp" alt="javascript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/css3.webp" alt="css3"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/bootstrap.webp" alt="bootstrap"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/npm.webp" alt="npm"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/webpack.webp" alt="webpack"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/net.webp" alt="dotnet"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/mysql.webp" alt="mysql"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/visualstudio.webp" alt="visualstudio"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/azure.webp" alt="azure"> </li>
-                    </ul>
                 </div>
                 <div class="work-item">
                     <div class="work-details">
@@ -817,20 +688,7 @@
                     <ul class="summary-list">
                         <li>Started career as a campus hire from Lovely Professional University.</li>
                         <li>Worked on frontend development projects for clients.</li>
-                        <li>Worked on creating reuseable components in angularjs</li>
                         <li>Collaborated with team members to deliver high-quality solutions.</li>
-                    </ul>
-                    <ul class="icon-list">
-                        <li> <img width="16" height="16" src="assets/icons/angularjs.webp" alt="angularjs"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/html5.webp" alt="html5"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/typescript.webp" alt="typescript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/javascript.webp" alt="javascript"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/css3.webp" alt="css3"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/npm.webp" alt="npm"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/webpack.webp" alt="webpack"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/net.webp" alt="dotnet"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/mysql.webp" alt="mysql"> </li>
-                        <li> <img width="16" height="16" src="assets/icons/visualstudio.webp" alt="visualstudio"> </li>
                     </ul>
                 </div>
             </div>
@@ -846,7 +704,7 @@
             </ul>
         </div>
         <!-- Download button -->
-        <a href="assets/nitesh_daga_resume_lightmode.pdf" aria-label="download-button" download class="download-button">
+        <a href="assets/nitesh_daga_html_resume.pdf" aria-label="download-button" download class="download-button">
             <img alt="download-button"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACF0lEQVR4nO2cTU4CQRCF317coy5M8Di48QDewp8D4LXQROQaJnoDwQVuaDNJTTIhMDRUVzNd876kFh0yVV0vU48MpAcghBBCCNlGkCBHQgGVUEAlFFAJBVRCAZVQQCUuBbwFMAXw22gwNg5Fe11sLKWnMYx5OWJzoQABmzGB4Z1XFVgBeABwAT8jXPXyKL0FqzvxVZJX4nn1wCepV41zcpaSfAi/Ag6l3sLLN2LwVNNVM10TcA5gdsA6Rc02NPs5iYAzAO8HrFPUbEOzH46wEgrowQO73kznPTAVVs3QAw2hByqhB0ZAD1RCDzSEHqiEHhgBPVAJPdAQemBfPPAewEhRs2YkuXrlgXcA1gC+9oi4r5mR5FhLzt544BmAN8n3DeDmiJrXAD7l8w8A54n2VoSAsSLuqmklXlvNTv4eOJDrwo5x3lazHtsg11Y50DcPjBVxs2YK8Vx4YOw4N2tajm3xAu4Ssa6ZS7ziPHDfONc1U4ytWw9sE7EZqcRz6YFt45xjbN0J2BQxp3jFe+Amg4Rj2xsPzIF7DzwlFFCJKw+0gh6ohB5oCD1QCT0wAnqgEnqgIfRADx44L2wd22e2Z+FZYevYPlXwWVgJBVSyEBFzHLQ+FVfS449F8qkkr052e+XZ8sD1WJKv5GT3JfxwKeL9SY9mL5+YbPm3LDgLs5dO1IzlFl92oNlUke21J4QQQgghhBACNf9fFHIRr8SLlQAAAABJRU5ErkJggg==">
         </a>
