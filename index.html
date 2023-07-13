@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Nitesh Daga - Frontend Developer Resume">
+    <meta name="description" content="I am Nitesh Daga. This is my resume, created using HTML and CSS">
     <title>Nitesh Daga - Frontend Developer Resume</title>
     <style>
         /* Reset default styles */
@@ -178,6 +181,20 @@
             text-align: left;
         }
 
+        .dark-mode-link {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            text-align: center;
+        }
+        .dark-mode-link a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .dark-mode-link a:hover {
+  text-decoration: underline;
+}
+
         .loaded {
             display: none;
         }
@@ -298,7 +315,7 @@
 
         /* Bottom bar styles */
         .bottom-bar {
-            background-color: rgb(50, 144, 215);
+            background-color: rgb(24, 88, 139);
             height: 5px;
             margin-bottom: 5px;
         }
@@ -307,7 +324,7 @@
         .section {
             margin-bottom: 5px;
             padding-bottom: 5px;
-            border-bottom: 5px solid rgb(50, 144, 215);
+            border-bottom: 5px solid rgb(24, 88, 139);
         }
 
         .section:last-child {
@@ -325,7 +342,7 @@
         h2,
         h3,
         h4 {
-            color: rgb(50, 144, 215);
+            color: rgb(24, 88, 139);
         }
 
         /* Work experience styles */
@@ -487,6 +504,7 @@
                 const file = theme === 'dark' ? 'assets/nitesh_daga_github_io_theme_dark.pdf' : 'assets/nitesh_daga_html_resume.pdf';
                 downloadButton.setAttribute('href', `${file}`);
             }
+            
 
         });
 
@@ -497,14 +515,14 @@
 <body>
     <header>
         <div class="toggle-container">
-            <input type="checkbox" id="theme-toggle" class="theme-toggle" />
+            <input type="checkbox" aria-label="theme-toggle" id="theme-toggle" class="theme-toggle" />
             <label for="theme-toggle" class="toggle-label"></label>
         </div>
     </header>
     <div class="cover-image-holder resume-container">
         <div class="overlay">
             <div class="name-designation">
-                <h1><a href="https://www.linkedin.com/in/daganitesh" target="_blank">Nitesh Daga</a></h1>
+                <h1><a href="https://www.linkedin.com/in/daganitesh" aria-label="linkedin" target="_blank">Nitesh Daga</a></h1>
             </div>
             <div class="contact-info">
                 <p>Email: niteshdaga000@gmail.com</p>
@@ -514,7 +532,10 @@
             <div class="load-wrapper">
                 <div class="activity"></div>
             </div>
-            <img src="assets/cover.png" alt="Cover Image" class="cover-image">
+            <img src="assets/cover.webp" alt="Cover Image" class="cover-image">
+            <div class="dark-mode-link">
+                <a href="assets/nitesh_daga_github_io_theme_dark.pdf" aria-label="dark-mode-link" download>See in Dark Mode</a>
+            </div>
         </div>
     </div>
     <div class="resume-container">
@@ -523,7 +544,7 @@
             <h2>Professional Summary</h2>
             <p>
                 Frontend Specialist with over 8 years of hands-on experience developing high-performance Web-based
-                applications using Angular, AngularJS, and other frameworks.
+                applications using Angular, React, and other frameworks.
             </p>
             <ul class="summary-list">
                 <li>Proficient in designing and developing applications utilizing JavaScript, TypeScript, HTML/HTML5,
@@ -559,6 +580,7 @@
             <div class="skills">
                 <ul>
                     <li>Angular</li>
+                    <li>React</li>
                     <li>HTML5</li>
                     <li>JavaScript</li>
                     <li>TypeScript</li>
@@ -579,15 +601,15 @@
             <div class="work-experience">
                 <div class="work-item">
                     <div class="work-details">
-                        <div class="image-placeholder" style="background-image: url('assets/sb.jpeg');"></div>
-                        <h4> <a href="https://sugarboxnetworks.com/" target="_blank">Sugarbox </a></h4>
+                        <div class="image-placeholder" style="background-image: url('assets/sb.webp');"></div>
+                        <h3> <a href="https://sugarboxnetworks.com/" aria-label="website link" target="_blank">Sugarbox </a></h3>
                         <span class="designation">Lead Engineer</span>
                         <span class="duration">December 2020 - Present</span>
                     </div>
 
                     <ul class="summary-list">
                         <li>Leading development of Sugarbox's Templatized, Decentralized Progressive Web App
-                            (<a href="https://sugarboxapp.com" target="_blank">sugarboxapp.com</a>/<a
+                            (<a aria-label="website link" href="https://sugarboxapp.com" target="_blank">sugarboxapp.com</a>/<a
                                 href="https://airflix.airasia.co.in/" target="_blank">airflix.co.in</a>)</li>
                         <li>Reporting & Analytics Integration like WebEngage, In-house data stream, Gtm, Facebook pixel,
                             etc. Robust error handling and reporting. Drm Playback Implementation using Widevine and
@@ -599,8 +621,8 @@
                 </div>
                 <div class="work-item">
                     <div class="work-details">
-                        <div class="image-placeholder" style="background-image: url('assets/tc.jpeg');"></div>
-                        <h4><a href="https://talocity.ai/" target="_blank">Talocity</a></h4>
+                        <div class="image-placeholder" style="background-image: url('assets/tc.webp');"></div>
+                        <h3><a aria-label="website link" href="https://talocity.ai/" target="_blank">Talocity</a></h3>
                         <span class="designation">Sr. Frontend Developer</span>
                         <span class="duration">November 2019 - December 2020</span>
                     </div>
@@ -616,8 +638,8 @@
                 </div>
                 <div class="work-item">
                     <div class="work-details">
-                        <div class="image-placeholder" style="background-image: url('assets/ab.jpeg');"></div>
-                        <h4><a href="https://www.altbalaji.com/" target="_blank">ALTBalaji</a></h4>
+                        <div class="image-placeholder" style="background-image: url('assets/ab.webp');"></div>
+                        <h3><a  aria-label="website link" href="https://www.altbalaji.com/" target="_blank">ALTBalaji</a></h3>
                         <span class="designation">Sr. Web Developerr</span>
                         <span class="duration">September 2018 - November 2019</span>
                     </div>
@@ -630,8 +652,8 @@
                 </div>
                 <div class="work-item">
                     <div class="work-details">
-                        <div class="image-placeholder" style="background-image: url('assets/ca.jpeg');"> </div>
-                        <h4><a href="" target="_blank">CheckApp</a></h4>
+                        <div class="image-placeholder" style="background-image: url('assets/ca.webp');"> </div>
+                        <h3><a aria-label="website link" href="https://checkapp.in/" target="_blank">CheckApp</a></h3>
                         <span class="designation">Web Developer</span>
                         <span class="duration">June 2017 - September 2018</span>
                     </div>
@@ -644,8 +666,8 @@
                 </div>
                 <div class="work-item">
                     <div class="work-details">
-                        <div class="image-placeholder" style="background-image: url('assets/ml.jpeg');"></div>
-                        <h4><a href="https://mahindralogistics.com/" target="_blank">Mahindra Logistics</a></h4>
+                        <div class="image-placeholder" style="background-image: url('assets/ml.webp');"></div>
+                        <h3><a aria-label="website link" href="https://mahindralogistics.com/" target="_blank">Mahindra Logistics</a></h3>
                         <span class="designation">Sr. Executive IT</span>
                         <span class="duration">September 2016 - June 2017</span>
                     </div>
@@ -658,8 +680,8 @@
                 </div>
                 <div class="work-item">
                     <div class="work-details">
-                        <div class="image-placeholder" style="background-image: url('assets/cts.jpeg');"></div>
-                        <h4><a href="https://www.cognizant.com/in/en" target="_blank">Cognizant</a></h4>
+                        <div class="image-placeholder" style="background-image: url('assets/cts.webp');"></div>
+                        <h3><a aria-label="website link" href="https://www.cognizant.com/in/en" target="_blank">Cognizant</a></h3>
                         <span class="designation">Programmer Analyst</span>
                         <span class="duration">June 2015 - September 2016</span>
                     </div>
@@ -675,15 +697,15 @@
         <div class="section">
             <h2>Educational Qualification</h2>
             <ul class="summary-list">
-                <li>B.Tech. (Computer Science) from <a href="https://www.lpu.in/" target="_blank">Lovely Professional
+                <li>B.Tech. (Computer Science) from <a aria-label="website link" href="https://www.lpu.in/" target="_blank">Lovely Professional
                         University</a> in 2015 with 8.4 CGPA (75 %)</li>
                 <li>HSC from MBSS school, Bikaner in 2010 with 84%</li>
                 <li>SSC from RSV school, Bikaner in 2008 with 91%</li>
             </ul>
         </div>
         <!-- Download button -->
-        <a href="assets/nitesh_daga_html_resume.pdf" download class="download-button">
-            <img
+        <a href="assets/nitesh_daga_html_resume.pdf" aria-label="download-button" download class="download-button">
+            <img alt="download-button"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACF0lEQVR4nO2cTU4CQRCF317coy5M8Di48QDewp8D4LXQROQaJnoDwQVuaDNJTTIhMDRUVzNd876kFh0yVV0vU48MpAcghBBCCNlGkCBHQgGVUEAlFFAJBVRCAZVQQCUuBbwFMAXw22gwNg5Fe11sLKWnMYx5OWJzoQABmzGB4Z1XFVgBeABwAT8jXPXyKL0FqzvxVZJX4nn1wCepV41zcpaSfAi/Ag6l3sLLN2LwVNNVM10TcA5gdsA6Rc02NPs5iYAzAO8HrFPUbEOzH46wEgrowQO73kznPTAVVs3QAw2hByqhB0ZAD1RCDzSEHqiEHhgBPVAJPdAQemBfPPAewEhRs2YkuXrlgXcA1gC+9oi4r5mR5FhLzt544BmAN8n3DeDmiJrXAD7l8w8A54n2VoSAsSLuqmklXlvNTv4eOJDrwo5x3lazHtsg11Y50DcPjBVxs2YK8Vx4YOw4N2tajm3xAu4Ssa6ZS7ziPHDfONc1U4ytWw9sE7EZqcRz6YFt45xjbN0J2BQxp3jFe+Amg4Rj2xsPzIF7DzwlFFCJKw+0gh6ohB5oCD1QCT0wAnqgEnqgIfRADx44L2wd22e2Z+FZYevYPlXwWVgJBVSyEBFzHLQ+FVfS449F8qkkr052e+XZ8sD1WJKv5GT3JfxwKeL9SY9mL5+YbPm3LDgLs5dO1IzlFl92oNlUke21J4QQQgghhBACNf9fFHIRr8SLlQAAAABJRU5ErkJggg==">
         </a>
     </div>
