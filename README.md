@@ -31,6 +31,7 @@ Make sure you have Node.js installed on your machine before running the command.
 ## Credits 🙌
 Icons downloaded from  [iconscout](https://iconscout.com/icons/)
 
+Images optimized from [tiny-img](https://tiny-img.com/)
 
 Html to Pdf converted from  [sejda](https://www.sejda.com/html-to-pdf)
 
