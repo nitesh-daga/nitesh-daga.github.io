@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateDownloadButtonHref(theme) {
         const downloadButton = document.querySelector('.download-button');
-        const file = theme === 'dark' ? 'assets/nitesh_daga_resume_darkmode.pdf' : 'assets/nitesh_daga_resume_lightmode.pdf';
+        const file = theme === 'dark' ? 'assets/nitesh_daga_github_theme_dark.pdf' : 'assets/nitesh_daga_github_theme_light.pdf';
         downloadButton.setAttribute('href', `${file}`);
     }
 });
