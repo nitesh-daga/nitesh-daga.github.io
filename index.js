@@ -17,22 +17,23 @@ async function displayResume() {
   await logWithDelay(chalk.green('Email: niteshdaga000@gmail.com'), 300);
   await logWithDelay(chalk.green('Phone: +91 7696489451'), 300);
   await logWithDelay(chalk.bold.blue('Professional Summary'), 500);
-  await logWithDelay(chalk.red('Frontend Specialist with over 8 years of hands-on experience developing high-performance Web-based applications using Angular, AngularJS, and other frameworks.'), 300);
-  await logWithDelay(chalk.red('- Proficient in designing and developing applications utilizing JavaScript, TypeScript, HTML/HTML5, CSS, Less, SCSS, Bootstrap, Materialize, and Tailwind CSS.'), 300);
-  await logWithDelay(chalk.red('- Skilled in WebRTC and other video technologies such as Twilio and Opentok.'), 300);
-  await logWithDelay(chalk.red('- Skilled in Video Streaming formats HLS & MPEG-DASH, Video Player development for OTT including the implementation of DRM using Widevine, Fairplay, and Play Ready, in players like VIDEOjs, SHAKA player, DASH, and Jwplayer.'), 300);
-  await logWithDelay(chalk.red('- Proficient in utilizing Build tools such as Gulp, Grunt, Webpack, Docker, CI/CD tools like Jenkins, Web Servers like Nginx, and Code Analysis tools like Sonarqube.'), 300);
-  await logWithDelay(chalk.red('- Experience in CDN Management, Distribution, Caching & Policy Methodology, DNS management, Content Management Systems, Log Processing & Analytics Kibana, Infrastructure Planning, and Scaled Deployment.'), 300);
-  await logWithDelay(chalk.red('- Extensive experience in creating, publishing, and managing custom packages on npm, Github, and Verdaccio.'), 300);
-  await logWithDelay(chalk.red('- Proven track record in developing, maintaining, and publishing decentralized, templatized Progressive Web Apps. Proficient in distributing these apps on various Edges as Debian packages, ensuring offline functionality and compatibility with isolated networks.'), 300);
-  await logWithDelay(chalk.red('- Well-versed in working with various AWS services, including S3, Lambda, DynamoDB, CloudFront, and Elastic Beanstalk, enabling robust and scalable web applications.'), 300);
-  await logWithDelay(chalk.red('- Familiar with backend technologies like C#, Node, Django, and databases like MongoDB and MySQL.'), 300);
-  await logWithDelay(chalk.red('- Experienced in utilizing project management tools like JIRA and Trello for effective coordination and streamlined project workflows.'), 300);
-  await logWithDelay(chalk.red('- Possess a strong understanding of accessibility, performance optimization, web analytics, and SEO techniques.'), 300);
-  await logWithDelay(chalk.red('- Proactively stay updated with the latest web trends, enabling informed technology decisions and staying ahead of industry developments.'), 300);
+  await logWithDelay(chalk.magenta('Engineering manager with ~9 years of experience leading teams, managing complex projects, and designing solutions across frontend, backend, data pipelines, CI/CD, reporting, alerting, monitoring, integrations, and payments.'), 300);
+  await logWithDelay(chalk.magenta('- Led frontend development teams, delivering performant web applications using JavaScript, TypeScript, HTML5, CSS, RxJS, NgRx, Redux, and UI frameworks (Bootstrap, Materialize, Tailwind CSS, etc.).'), 300);
+  await logWithDelay(chalk.magenta('- Solved complex video streaming challenges (HLS, MPEG-DASH, DRM...) using WebRTC, Twilio, Opentok, and players such as VIDEOjs and SHAKA, improving user experience significantly.'), 300);
+  await logWithDelay(chalk.magenta('- Proficient in build tools (Gulp, Grunt, Webpack, Docker), CI/CD (Jenkins), web servers (Nginx), and code analysis(Sonarqube) for enhanced code quality.'), 300);
+  await logWithDelay(chalk.magenta('- Experienced in CDN management, content delivery optimization, and infrastructure planning, ensuring scalability and resilience.'), 300);
+  await logWithDelay(chalk.magenta('- Extensive experience in creating, publishing, and managing custom packages (npm, deb), facilitating development efficiency and component reusability.'), 300);
+  await logWithDelay(chalk.magenta('- Developed, maintained, and published decentralized, white labeled, Progressive Web Apps, including offline functionality and isolated network compatibility.'), 300);
+  await logWithDelay(chalk.magenta('- Leveraged AWS services (S3, Lambda, DynamoDB, CloudFront, Elastic Beanstalk) to design scalable and robust web applications.'), 300);
+  await logWithDelay(chalk.magenta('- Experience with backend technologies (C#, Node.js, Django) and databases (MongoDB, MySQL)'), 300);
+  await logWithDelay(chalk.magenta('- Utilized project management tools (JIRA, Trello) for effective coordination and streamlined workflows.'), 300);
+  await logWithDelay(chalk.magenta('- Strong understanding of accessibility, performance optimization, web analytics, and SEO techniques for user-centric development.'), 300);
+  await logWithDelay(chalk.magenta('- Expertise in location-based solutions, including mapping, autocomplete, and rendering using OpenStreetMap and Leaflet.'), 300);
+  await logWithDelay(chalk.magenta('- Proactive in staying updated with industry trends, continuously improving development practices.'), 300);
 
   await logWithDelay(chalk.bold.blue('Technical Skills'), 500);
   await logWithDelay(chalk.cyan('- Angular'), 300);
+  await logWithDelay(chalk.cyan('- React'), 300);
   await logWithDelay(chalk.cyan('- HTML5'), 300);
   await logWithDelay(chalk.cyan('- JavaScript'), 300);
   await logWithDelay(chalk.cyan('- TypeScript'), 300);
@@ -47,11 +48,11 @@ async function displayResume() {
 
   await logWithDelay(chalk.bold.blue('Work Experience'), 500);
   await logWithDelay(chalk.bold.yellow('Sugarbox'), 300);
-  await logWithDelay(chalk.green('- Lead Engineer'), 300);
+  await logWithDelay(chalk.green('- Engineering Manager'), 300);
   await logWithDelay(chalk.green('- December 2020 - Present'), 300);
-  await logWithDelay(chalk.green('- Leading development of Sugarbox\'s Templatized, Decentralized Progressive Web App (sugarboxapp.com/airflix.co.in)'), 300);
-  await logWithDelay(chalk.green('- Reporting & Analytics Integration like WebEngage, In-house data stream, Gtm, Facebook pixel, etc. Robust error handling and reporting. Drm Playback Implementation using Widevine and Fairplay, Payments Integrations, Partner Integrations, Themes, etc.'), 300);
-  await logWithDelay(chalk.green('- Also involved in setting up a pipeline for its distribution and deployment to various decentralized edge nodes leveraging DPKG, deb packages, nginx virtual hosts, dnsmasq etc.'), 300);
+  await logWithDelay(chalk.green('- Managing development of SugarBoxs Templatized, Decentralized Progressive Web App (sugarboxapp.com including an in-flight entertainment(IFE) solution across diverse airline partners airflix.co.in)'), 300);
+  await logWithDelay(chalk.green('- Overseeing Reporting & Analytics Integration like WebEngage, In-house data stream, Gtm, Facebook pixel, etc. Implementing Robust error handling and reporting across different product suites within SugarBox. Leading Drm Playback Implementation using Widevine and Fairplay, Managing Payments Integrations, Real time flight data tracking using FlightAware, Partner Integrations using shopify and woocommerce, Payment Integrations (Razorpay, Simpl, Amazonpay etc), Themes, etc.'), 300);
+  await logWithDelay(chalk.green('- Instrumental in setting up pipelines for distribution and deployment of services to various decentralized edge nodes leveraging DPKG, deb packages, nginx virtual hosts, dnsmasq etc.'), 300);
 
   await logWithDelay(chalk.bold.yellow('Talocity'), 300);
   await logWithDelay(chalk.green('- Sr. Frontend Developer'), 300);
@@ -92,7 +93,7 @@ async function displayResume() {
   await logWithDelay(chalk.bold.blue('Education'), 500);
   await logWithDelay(chalk.yellow('- Bachelor of Technology (B.Tech), Computer Science and Engineering'), 300);
   await logWithDelay(chalk.blue('- Lovely Professional University'), 300);
-  await logWithDelay(chalk.green('- Graduated in 2015'), 300);
+  await logWithDelay(chalk.green('- Graduated in 2015 with 75% (8.4 CGPA)'), 300);
   await logWithDelay(chalk.yellow('- HSC from MBSS school, Bikaner in 2010 with 84%'), 300);
   await logWithDelay(chalk.yellow('- SSC from RSV school, Bikaner in 2008 with 91%'), 300);
 }
