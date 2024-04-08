@@ -16,7 +16,7 @@ To have a closer look at my resume, please visit the live version [here](https:/
 
 Fun Fact: The resume also supports dark mode. Feel free to toggle the dark mode switch to see the alternative color scheme. 🌙
 
-Do check the Lighthouse report [here](https://pagespeed.web.dev/analysis/https-nitesh-daga-github-io/stqunvzhd5?form_factor=desktop) for the site.
+Do check the Lighthouse report [here](https://pagespeed.web.dev/analysis/https-nitesh-daga-github-io/4mljtzdlf4?form_factor=desktop) for the site.
 
 To view my resume in terminal, simply run the following command in your terminal:
 
