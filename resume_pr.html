@@ -1,253 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Priyanka Jain - Chartered Accountant Resume</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-    body {
-      font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
-      background: #f4f6fb;
-      margin: 0;
-      padding: 0;
-      color: #222;
-    }
-    .container {
-      max-width: 900px;
-      background: #fff;
-      margin: 40px auto;
-      border-radius: 8px;
-      box-shadow: 0 0 20px #d8d8d8;
-      padding: 40px;
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 2px solid #e2e6eb;
-      padding-bottom: 18px;
-      margin-bottom: 25px;
-      flex-wrap: wrap;
-    }
-    .main-title {
-      font-size: 2.4em;
-      color: #0f3c73;
-      font-weight: 700;
-      margin: 0 0 4px 0;
-      letter-spacing: 0.5px;
-    }
-    .role {
-      font-size: 1.1em;
-      color: #2e4a70;
-      margin-bottom: 10px;
-    }
-    .contact-info {
-      text-align: right;
-      font-size: 0.95em;
-      color: #2b2b2b;
-    }
-    .contact-info div {
-      margin: 3px 0;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 6px;
-    }
-    .contact-info svg {
-      width: 15px;
-      height: 15px;
-      fill: #0f3c73;
-    }
-    .section {
-      margin-bottom: 25px;
-    }
-    .section-title {
-      background: #eaf2fb;
-      color: #0f3c73;
-      padding: 7px 15px;
-      border-left: 6px solid #1d5fa7;
-      border-radius: 3px;
-      font-size: 1.18em;
-      margin-bottom: 13px;
-      font-weight: bold;
-    }
-    ul {
-      margin-top: 0;
-      margin-bottom: 10px;
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 5px;
-      line-height: 1.5em;
-    }
-    .two-columns {
-      display: flex;
-      gap: 36px;
-      flex-wrap: wrap;
-    }
-    .col {
-      flex: 1 1 0;
-      min-width: 280px;
-    }
-    .edu-item {
-      margin-bottom: 15px;
-    }
-    .job-pos {
-      font-weight: 700;
-      color: #0f3c73;
-      font-size: 1.05em;
-    }
-    .job-org {
-      color: #1c3e5d;
-      margin-bottom: 2px;
-      font-weight: 600;
-    }
-    .job-date {
-      color: #555;
-      font-size: 0.95em;
-      margin-bottom: 6px;
-    }
-    .skills-list, .lang-list, .strengths-list, .expertise-list {
-      list-style: none;
-      margin: 0 0 12px 0;
-      padding: 0;
-    }
-    .skills-list li, .lang-list li, .strengths-list li, .expertise-list li {
-      margin-bottom: 6px;
-    }
-    @media print {
-      body { background: #fff; }
-      .container { box-shadow: none; margin: 0; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanka Jain - Chartered Accountant</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #fff;
+  color: #343334;
+  -webkit-print-color-adjust: exact;
+}
+.container {
+  width: 900px;
+  max-width: 95%;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  padding-bottom: 20px;
+}
+header {
+  background-color: #00b6cb;
+  color: white;
+  padding: 30px 40px;
+}
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+header h2 {
+  margin: 4px 0 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.contact div {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.contact i {
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 6px;
+}
+main {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  column-gap: 20px;
+  padding: 20px 40px;
+}
+section {
+  margin-bottom: 15px;
+}
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 3px solid #343334;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+}
+p, li {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 4px 0;
+}
+ul {
+  padding-left: 18px;
+  margin: 6px 0;
+}
+.company {
+  color: #00b6cb;
+  font-weight: 600;
+}
+.position {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.experience-item {
+  margin-bottom: 10px;
+}
+.date {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #343334;
+}
+.separator {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+.skill-title {
+  color: #00b6cb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.skill-tags span {
+  display: inline-block;
+  border: 1px solid #00b6cb;
+  border-radius: 10px;
+  padding: 3px 10px;
+  font-size: 13px;
+  margin: 3px 5px 3px 0;
+}
+.strength-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.strength-item i {
+  color: #00b6cb;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.strength-item div {
+  font-size: 13px;
+}
+.language-level {
+  display: flex;
+  align-items: center;
+}
+.language-level .dots {
+  margin-left: 6px;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+}
+.dot.active {
+  background-color: #00b6cb;
+}
+.dot.inactive {
+  background-color: #e4e4e4;
+}
+.bar-container {
+  position: relative;
+  background: #e4e4e4;
+  height: 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.bar {
+  background: #00b6cb;
+  height: 6px;
+  border-radius: 4px;
+  position: relative;
+}
+.bar::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+@media print {
+  body {
+    box-shadow: none;
+  }
+  .container {
+    box-shadow: none;
+  }
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div>
-        <div class="main-title">Priyanka Jain</div>
-        <div class="role">Chartered Accountant</div>
-      </div>
-      <div class="contact-info">
-        <div>
-          <svg viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28-47.6-22.9L61.1 16.7C27.2 25.8 3.2 56.3 .4 91.5c-6.4 81.8 24.8 173.5 87.5 236.2s154.4 93.9 236.2 87.5c35.2-2.8 65.7-26.8 74.8-60.7l15-56.2c5.1-19.6-4.3-39.9-22.9-47.6l-59.6-24.8c-15.6-6.5-33.5-2.3-45.2 10.4l-19.8 21.4c-54.5-28.7-99.1-73.3-127.8-127.8l21.4-19.8c12.7-11.7 16.9-29.6 10.4-45.2L164.9 24.6z"/></svg>
-          +91 8433998804, 7048178386
+<div class="container">
+  <header>
+    <h1>PRIYANKA JAIN</h1>
+    <h2>Chartered Accountant</h2>
+    <div class="contact">
+      <div><i>📞</i>+91 8433998804, 7048178386</div>
+      <div><i>📧</i>jainpriyanka428@gmail.com</div>
+      <div><i>🔗</i>www.linkedin.com/in/ca-jain-priyanka</div>
+      <div><i>📍</i>Andheri, Mumbai</div>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <section>
+        <div class="section-title">Summary</div>
+        <p>Accomplished Chartered Accountant with a 9-year tenure in the dynamic mortgage industry, spanning Banking and NBFC sectors. Profoundly skilled in the intricacies of retail and high-ticket underwriting,  delivering high-quality loan disbursals while maintaining the utmost compliance.</p>
+      </section>
+
+      <section>
+        <div class="section-title">Experience</div>
+
+        <div class="experience-item">
+          <div class="position">Area Credit Manager</div>
+          <div class="company">Profectus Capital Private Limited</div>
+          <div class="date">📅 07/2024 – Present | Mumbai</div>
+        <ul>
+        
+            <li>Underwriting, disbursal and post disbursal activities of mortgage loans (up to 7 Crores) at full length.</li>
+            <li>Guidance & managing CPA team ensuring timely & accurate CAM preparation.</li>
+            <li>Managing branch functionalities like Vendor management (Technical, Legal, FI Agency), Hind sighting, Audits, PDD monitoring, Credit Monitoring, Infant delinquency calling, collection visits.</li>
+            <li>Conducting trainings at DSA offices, discussion of cases to fasten TAT.</li>
+            <li>Involved in activities at Branch and HO to smoothen policy and processes (UATs for GST Scoreme, Banking Scoreme, Pennant)</li>
+        
+        </ul>
         </div>
-        <div>
-          <svg viewBox="0 0 512 512"><path d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6.4 64L272 272 54.4 128h403.2z"/></svg>
-          jainpriyanka428@gmail.com
+
+        <div class="separator"></div>
+        <div class="experience-item">
+          <div class="position">Area Credit Manager</div>
+          <div class="company">IndusInd Bank</div>
+          <div class="date">📅 12/2023 – 06/2024 | Mumbai</div>
+          <ul>
+            <li>Underwriting and decisioning of high ticket LAP cases up to ₹10 Crores.</li>
+            <li>Disbursement of cases including liasioning with Legal & Valuation vendors, Operations Team, Business team.</li>
+          </ul>
         </div>
-        <div>
-          <svg viewBox="0 0 384 512"><path d="M168 0C75.2 0 0 75.2 0 168c0 87.3 144 304 144 304 6.5 9.4 17.1 14.9 28 14.9s21.5-5.5 28-14.9c0 0 144-216.7 144-304C384 75.2 308.8 0 216 0zm0 256c-48.6 0-88-39.4-88-88s39.4-88 88-88 88 39.4 88 88-39.4 88-88 88z"/></svg>
-          Andheri, Mumbai
+
+        <div class="separator"></div>
+        <div class="experience-item">
+          <div class="position">Area Credit Manager</div>
+          <div class="company">L&T Financial Services</div>
+          <div class="date">📅 08/2019 – 07/2023 | Mumbai</div>
+          <ul>
+            <li>Retail & high value underwriting up to ₹10 Crores (Home Loans & LAP).</li>
+            <li>Evaluated creditworthiness through Personal Discussion, Financial Analysis, Ratio Analysis, Banking Analysis, CIBIL Checks, Google Checks.</li>
+            <li>Facilitate disbursement of varied property types.</li>
+            <li>Vendor management, TAT reduction, and business team training.</li>
+          </ul>
         </div>
-        <div>
-          <svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.14-338a53.42 53.42 0 1 1 53.42-53.41 53.41 53.41 0 0 1-53.42 53.41zM447.9 448h-92.68V302.4c0-34.7-12.41-58.4-43.44-58.4-23.7 0-37.8 15.9-44 31.3-2.3 5.6-2.9 13.3-2.9 21.1V448h-92.68s1.2-241.2 0-266.1h92.68v37.7c-.2.3-.5.7-.7 1h.7v-1c12.3-19 34.3-46.2 83.4-46.2 60.8 0 106.5 39.7 106.5 125V448z"/></svg>
-          linkedin.com/in/ca-jain-priyanka
+
+        <div class="separator"></div>
+        <div class="experience-item">
+          <div class="position">Branch Credit Manager</div>
+          <div class="company">Piramal Capital & Housing Finance Ltd</div>
+          <div class="date">📅 08/2017 – 08/2019 | Mumbai</div>
+          <ul>
+            <li>Credit assessment and decision of self-employed cases up to ₹3 Crores.</li>
+            <li>Reassessed and filtered pools for securitisation of HL and LAP to Banks and NBFCs. Worked with ICICI Bank, BOB, Indiabulls Housing Finance in the project.Credit assessment and decision of Self employed cases up to 3 crores in TAT.</li>
+          </ul>
         </div>
-      </div>
+
+        <div class="separator"></div>
+        <div class="experience-item">
+          <div class="position">Branch Credit Manager</div>
+          <div class="company">ICICI Bank</div>
+          <div class="date">📅 08/2016 – 08/2017 | Mumbai</div>
+          <p>ICICI Bank is a leading Bank.</p>
+          <ul>
+            <li>Underwriting and decisioning of cases up to ₹1 Crore.</li>
+            <li>Disbursement of cases.</li>
+            <li>Sanction authority of ₹30 Lakhs.</li>
+          </ul>
+        </div>
+      </section>
     </div>
 
-    <div class="section">
-      <div class="section-title">Summary</div>
-      <div>
-        Accomplished Chartered Accountant with 9 years of experience in the dynamic mortgage industry, spanning Banking and NBFC sectors. Profoundly skilled in the intricacies of retail and high-ticket underwriting, delivering high-quality loan disbursals while maintaining the utmost compliance.
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title">Experience</div>
-      <div>
-        <div class="job-pos">Area Credit Manager</div>
-        <div class="job-org">Profectus Capital Private Limited</div>
-        <div class="job-date">07/2024 – Present, Andheri, Mumbai</div>
-        <ul>
-          <li>Underwriting, disbursal and post disbursal activities of MSME loans (up to 7 Crores) at full length.</li>
-          <li>Guidance and managing CPA team to ensure timely and accurate CAM preparation.</li>
-          <li>Managing branch functionalities like Vendor management (Technical, Legal, FI Agency), Hind sighting, Audits, PDD monitoring, Credit Monitoring, Infant delinquency calling, collection visits.</li>
-          <li>Conducting trainings at DSA offices, discussion of cases to fasten TAT.</li>
-          <li>Involved in activities at Branch and HO to smoothen policy and process (UATs for GST Scoreme, Banking Scoreme, Pennant).</li>
-        </ul>
-
-        <div class="job-pos">Area Credit Manager</div>
-        <div class="job-org">IndusInd Bank</div>
-        <div class="job-date">12/2023 – 06/2024, Andheri, Mumbai</div>
-        <ul>
-          <li>Underwriting and decisioning of high ticket LAP cases up to ₹10 Crores.</li>
-          <li>Disbursement of cases including liasioning with Legal & Valuation vendors, Operations Team, Business team.</li>
-        </ul>
-
-        <div class="job-pos">Area Credit Manager</div>
-        <div class="job-org">L&T Financial Services</div>
-        <div class="job-date">08/2019 – 07/2023, Mumbai</div>
-        <ul>
-          <li>Retail & high value underwriting up to ₹10 Crore of Home loans and LAP.</li>
-          <li>Evaluated creditworthiness through Personal Discussion, Financial Analysis, Ratio Analysis, Banking Analysis, CIBIL Checks, Google Checks.</li>
-          <li>Coordinated to facilitate disbursement for under construction, ready purchase, and resale properties.</li>
-          <li>Ensured compliance & thorough checks to mitigate risk.</li>
-          <li>Vendor management, meetings to reduce TAT, training associates & business team.</li>
-          <li>User Acceptance Testing during transition from Salesforce to Credit Portal.</li>
-        </ul>
-
-        <div class="job-pos">Branch Credit Manager</div>
-        <div class="job-org">Piramal Capital Housing Finance Ltd (DHFL)</div>
-        <div class="job-date">08/2017 – 08/2019, Mumbai</div>
-        <ul>
-          <li>Credit assessment and decision of self-employed cases up to ₹3 Crores within TAT.</li>
-          <li>Audit resolutions, pool filtering for securitisation of Home loans and LAP.</li>
-          <li>Worked with ICICI Bank, BOB, Indiabulls Housing Finance.</li>
-        </ul>
-
-        <div class="job-pos">Branch Credit Manager</div>
-        <div class="job-org">ICICI Bank</div>
-        <div class="job-date">08/2016 – 08/2017, Mumbai</div>
-        <ul>
-          <li>Underwriting & decisioning of cases up to ₹1 Crore.</li>
-          <li>Disbursement of cases, sanction authority of ₹30 Lakhs.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section two-columns">
-      <div class="col">
+    <div>
+      <section>
         <div class="section-title">Skills</div>
-        <ul class="skills-list">
-          <li>Underwriter</li>
-          <li>Financial Analysis</li>
-          <li>Risk Management</li>
-          <li>Personal Discussion</li>
-          <li>Decision Making</li>
-          <li>MS Excel, PowerPoint, Word</li>
-        </ul>
+        <div class="skill-title">Underwriter</div>
+        <div class="skill-tags">
+          <span>Financial Analysis</span><span>Risk Management</span><span>Personal Discussion</span><span>Decision Making</span>
+        </div>
+        <div class="skill-title">IT</div>
+        <div class="skill-tags">
+          <span>MS Excel</span><span>MS PowerPoint</span><span>MS Word</span>
+        </div>
+      </section>
+
+      <section>
         <div class="section-title">Strengths</div>
-        <ul class="strengths-list">
-          <li><strong>Vision:</strong> Clear aims and right direction.</li>
-          <li><strong>Influence:</strong> Positive environment for team and colleagues.</li>
-        </ul>
+        <div class="strength-item"><i>👁️</i><div><b>Vision</b><br>Having clear aims to target and moving in the right direction.</div></div>
+        <div class="strength-item"><i>🤝</i><div><b>Influence</b><br>Establish positive influence with team and colleagues for a great work environment.</div></div>
+      </section>
+
+      <section>
         <div class="section-title">Industry Expertise</div>
-        <ul class="expertise-list">
-          <li>Credit Underwriting</li>
-          <li>Financial Analysis & Risk Management</li>
-        </ul>
+        <p><b>Credit Underwriting</b></p>
+        <div class="bar-container"><div class="bar" style="width:90%;"></div></div>
+        <p><b>Financial Analysis & Risk Management</b></p>
+        <div class="bar-container"><div class="bar" style="width:90%;"></div></div>
+      </section>
+
+      <section>
         <div class="section-title">Languages</div>
-        <ul class="lang-list">
-          <li>English (Proficient)</li>
-          <li>Hindi (Native)</li>
-        </ul>
-      </div>
-      <div class="col">
+        <div class="language-level"><b>English</b>
+          <div class="dots">
+            <span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot inactive"></span>
+          </div>
+        </div>
+        <div class="language-level"><b>Hindi</b>
+          <div class="dots">
+            <span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <div class="section-title">Education</div>
-        <div class="edu-item">
-          <strong>Chartered Accountant</strong><br>
-          Institute of Chartered Accountants<br>
-          05/2011 - 06/2016
-        </div>
-        <div class="edu-item">
-          <strong>Bachelor of Commerce</strong><br>
-          Veer Narmad South Gujarat University<br>
-          05/2011 - 04/2014
-        </div>
-      </div>
+        <p><b>Chartered Accountant</b><br>
+        <span class="company">Institute of Chartered Accountants</span><br>
+        📅 05/2011 – 06/2016</p>
+        <p><b>Bachelor of Commerce</b><br>
+        <span class="company">Veer Narmad South Gujarat University</span><br>
+        📅 05/2011 – 04/2014</p>
+      </section>
     </div>
-  </div>
+  </main>
+</div>
 </body>
 </html>
