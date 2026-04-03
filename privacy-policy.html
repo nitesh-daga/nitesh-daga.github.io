@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripNudge - Privacy Policy</title>
+    <style>
+        :root {
+            --primary: #0D9488;
+            --text-main: #374151;
+            --text-muted: #6B7280;
+            --bg-body: #F9FAFB;
+            --bg-card: #FFFFFF;
+            --border: #E5E7EB;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border);
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: #111827;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            border-bottom: 2px solid var(--bg-body);
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #1F2937;
+            margin-top: 24px;
+        }
+        p, ul {
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 32px;
+            font-size: 0.9rem;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border);
+            margin: 32px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TripNudge Privacy Policy</h1>
+        <p class="meta">Last Updated: April 2026</p>
+
+        <p>TripNudge ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the TripNudge mobile application and related services (the "App").</p>
+
+        <p>TripNudge is a smart trip coordination and departure intelligence system designed primarily for parents (Admins) and drivers (Drivers) to coordinate daily school pickups and drop-offs. Because the App relies on location tracking to function, privacy and data minimization are core to our design.</p>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>A. Personal Information</h3>
+        <ul>
+            <li><strong>Account Data:</strong> Your name, phone number, and role (Parent/Admin, Co-Admin, or Driver).</li>
+            <li><strong>Communication Data:</strong> Firebase Cloud Messaging (FCM) tokens required to send push notifications.</li>
+        </ul>
+
+        <h3>B. Location Data (Crucial for Functionality)</h3>
+        <ul>
+            <li><strong>Background Location:</strong> When acting as a Driver, the App collects your background GPS location (latitude, longitude, speed, and bearing).</li>
+            <li><strong>Geofencing Data:</strong> Information regarding when you enter and exit predefined geographic zones (such as a Home or School radius).</li>
+            <li><strong>Important Constraint:</strong> Location data is <strong>ONLY</strong> collected during specifically defined "Tracking Windows" (e.g., 2 hours before a scheduled drop-off). Once a Tracking Window closes, the App immediately terminates background location polling.</li>
+        </ul>
+
+        <h3>C. Usage and Device Data</h3>
+        <ul>
+            <li>Device model, operating system version, and battery level metrics (to ensure the App does not excessively drain the Driver's battery).</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li><strong>To Provide the Service:</strong> To map live ETAs, calculate "Time Budgets," and automatically trigger arrival/departure notifications without manual interaction.</li>
+            <li><strong>Trip Intelligence:</strong> To identify trip patterns, infer commercial trips taken during the tracking window (to better calculate time budgets), and provide accountability summaries for parents.</li>
+            <li><strong>Safety & Alerts:</strong> To push critical time-budget alerts (e.g., "Leave Now" or "Running Late") to both the Driver and the Parent.</li>
+        </ul>
+
+        <h2>3. How Information is Shared</h2>
+        <p>We <strong>do not sell</strong> your personal information. Information is only shared within your specific, invite-only TripNudge household:</p>
+        <ul>
+            <li><strong>Between Drivers and Admins:</strong> A Driver’s live location, ETA, and inferred commercial trip counts during the tracking window are visible strictly to the Admin (Parent) who invited them.</li>
+            <li><strong>With Service Providers:</strong> We utilize third-party services like Google Maps (for ETA matrix calculations) and Firebase (for secure Auth and Realtime Database functionality). These services only receive the minimum data required to process the request.</li>
+        </ul>
+
+        <h2>4. Driver Consent and Autonomy</h2>
+        <ul>
+            <li>Drivers must explicitly opt-in to Background Location permissions at the OS level.</li>
+            <li>Drivers have the ability to explicitly mark themselves as "Unavailable" on any given day, which suspends tracking for that date.</li>
+            <li>Drivers are visually notified (via the App UI) when they are actively within a Tracking Window and when that window has closed.</li>
+        </ul>
+
+        <h2>5. Data Retention</h2>
+        <ul>
+            <li>Live location breadcrumbs are stored temporarily for accountability and route replay. By default, granular route history is retained for 90 days before being aggregated into anonymous daily summaries.</li>
+            <li>You may request the deletion of your account and associated trip data at any time by contacting your Household Admin or through the App settings.</li>
+        </ul>
+
+        <h2>6. Security</h2>
+        <p>We use industry-standard encryption (via Firebase) to protect your data both in transit and at rest. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the App and updating the "Last Updated" date.</p>
+
+        <hr>
+        <p class="meta" style="margin-bottom: 0;">If you have any questions about this Privacy Policy, please contact the TripNudge administrative team.</p>
+    </div>
+</body>
+</html>
